@@ -9,7 +9,7 @@ myform.submit(function(event){
   myform.find("button").text("Sending...");
   emailjs.sendForm(service_id,template_id,"myform")
   	.then(function(){ 
-    	alert("Thank you for your message");
+    	alert("Thank you for your message!");
        myform.find("button").text("Send");
     }, function(err) {
        alert("Could't send letter\r\n Error:\n " + JSON.stringify(err));
